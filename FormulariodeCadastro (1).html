@@ -1,0 +1,140 @@
+<?php
+
+    if(isseT($_POST[´submit´]))
+    {
+        print_r($_POST[email]);
+        print_r($_POST[email]);
+    }
+
+?>
+<!DOCTYPE html>
+<html  lang =" en ">
+<head>
+    <meta  charset =" UTF-8 ">
+    <meta  http-equiv = " X-UA-Compatible " =" IE=edge ">
+    <meta  name =" viewport " content =" whidth=device-whidth, initial-scale=1.0 ">
+    <title > Formulário | GN </title>
+
+</head>
+<style>
+    body{
+        font-size: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(165, 165, 165));
+    }
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,0,8);
+        padding: 15px;
+        border-radius: 15px;
+        width: 20%;
+    }
+    fieldset {
+        border: 3px solid rgb(0, 0, 0);
+    }
+    legend {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .inputBox {
+        position: relative;
+    }
+    .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        color:rgb(0, 0, 0);
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    .labelInput{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: .5s;
+    }
+</style>
+<body>
+    <div class  =" box ">
+        <form action  ="" >
+            <fieldset >
+                <br>
+                <legend> <b> Fórmulário de Clientes </b> </legend>
+                <br>
+                <div class  =" inputBox " >
+                    <br>
+                    <input  type =" text " name =" nome " id =" nome " class =" inputUser " required>
+                    <br><br>
+                    <label  for =" nome " class =" labelInput "> Nome completo: </label>
+                    <br>
+                </div>
+                <div class  =" inputBox ">
+                    <br>
+                    <input  type =" text " name =" email " id =" email " class =" inputUser " required>
+                    <br><br>
+                    <label  for =" email " class =" labelInput " > Email: </label>
+                    <br>
+                </div>
+                <br>
+                <div class  =" inputBox ">
+                    <br>
+                    <input  type =" tel " name =" telefone " id =" telefone " class =" inputUser " required>
+                    <br><br>
+                    <label  for =" telefone " class =" labelInput "> Telefone: </label>
+                    <br>
+                </div>
+                <p> Sexo:</p>
+                <input  type ="checkbox" id="feminino" value =" feminino " name =" genero " required>
+                <label  for="feminino">Feminino</label>
+                <input  type ="checkbox" id="masculino" value =" masculino " name =" genero " required>
+                <label  for="feminino">Masculino</label>
+                <input  type ="checkbox" id =" outros " name =" genero " value ="" required>
+                <label  for =" outro "> Outro </label>
+                </form>
+                <br><br>
+                <div class ="data">
+                    <label  for =" data_nascimento " > <b> Data de Nascimento: </b> </label>
+                    <input type =" data " nome =" data_nascimento " id =" data_nascimento " required="">
+                </div>
+                <br>
+                <div class  =" inputBox ">
+                    <br>
+                    <input  type =" text " name =" cidade " id =" cidade " class =" inputUser " required>
+                    <br><br>
+                    <label  for =" cidade " class =" labelInput " > Cidade </label>
+                    <br>
+                </div>
+                <br> <br>
+                <div class =" inputBox ">
+                    <br>
+                    <input  type =" text " name =" estado " id =" estado " class =" inputUser " required>
+                    <br><br>
+                    <label  for =" estado " class =" labelInput " > Estado </label>
+                    <br>
+                </div>
+                <br>
+                <div class  =" inputBox ">
+                    <br>
+                    <input  type =" text " name =" endereco " id =" endereco " class =" inputUser " required>
+                    <br><br>
+                    <label  for =" endereco " class =" labelInput "> Endereço </label>
+                    <br>
+                </div>
+                <br>
+                <button>
+                    <b>Cadastrar</b>
+                </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
